@@ -30,7 +30,13 @@ Write three separate variable declarations using the `let` keyword to store the 
 2. A **number** that is a float.
 3. A **boolean** value of `true` (must be written without quotation marks).
 
+let bookTitle = 'Atomic Habit';
+let bookNumber = 26.01;
+let isAvailable = true;
 
+console.log(bookTitle);
+console.log(bookNumber);
+console.log(isAvailable);
 
 
 #### Exercise 3: Single-Line Comments (Coding)
@@ -38,6 +44,7 @@ Write three separate variable declarations using the `let` keyword to store the 
 Add a single-line comment to the following variable assignment that explains to a human reader the purpose of the variable.
 
 ```javascript
+// stores the currect score number
 let currentScore = 95;
 ```
 
@@ -47,6 +54,9 @@ Using `console.log()`, write two separate comparisons between the string `'100'`
 
 1. Use the operator that checks for **value equality** (`==`).
 2. Use the operator that checks for **absolute strict equality** (`===`).
+
+console.log('100' == 100);
+console.log('100' === 100);
 
 ---
 
@@ -58,8 +68,7 @@ The **Ternary Operator** allows IF/ELSE logic in a single line. Write a Ternary 
 
 ```javascript
 let isWeekend = false;
-let schedule;
-// Write Ternary Operator
+let schedule = isWeekend ? "Day Off" : "Work Day";
 ```
 
 #### Exercise 6: If/Else Structure (Coding)
@@ -68,7 +77,12 @@ Write an `if/else` statement that checks the variable `userAge`. If `userAge` is
 
 ```javascript
 let userAge = 16;
-// Write if/else statement
+
+if (userAge >= 18) {
+  console.log("Access Granted");
+} else {
+  console.log("Access Denied");
+}
 ```
 
 #### Exercise 7: Logical AND Operator (Coding)
