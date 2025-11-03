@@ -15,10 +15,9 @@ For all the exercises, write the requested JavaScript code in a new .js file. Us
 The following code snippet violates standard JavaScript conventions regarding naming, indentation, and termination. Correct the code to follow **camelCase**, proper whitespace/indentation, and the use of semicolons.
 
 ```javascript
-var thisIsANewVariable = 10;
-if (thisIsANewVariable == 10) {
+var thisisanewvariable = 10;
+if (thisisanewvariable == 10) {
   // code block
-  console.log(thisIsANewVariable);
 }
 ```
 
@@ -30,24 +29,12 @@ Write three separate variable declarations using the `let` keyword to store the 
 2. A **number** that is a float.
 3. A **boolean** value of `true` (must be written without quotation marks).
 
-let bookTitle = 'Atomic Habit';
-let bookNumber = 26.01;
-let isAvailable = true;
-
-console.log(bookTitle);
-console.log(bookNumber);
-console.log(isAvailable);
-
-
 #### Exercise 3: Single-Line Comments (Coding)
 
 Add a single-line comment to the following variable assignment that explains to a human reader the purpose of the variable.
 
 ```javascript
-// stores the currect score number
 let currentScore = 95;
-
-console.log(currentScore);
 ```
 
 #### Exercise 4: Equality Comparison (Coding)
@@ -56,9 +43,6 @@ Using `console.log()`, write two separate comparisons between the string `'100'`
 
 1. Use the operator that checks for **value equality** (`==`).
 2. Use the operator that checks for **absolute strict equality** (`===`).
-
-console.log('100' == 100);
-console.log('100' === 100);
 
 ---
 
@@ -70,9 +54,8 @@ The **Ternary Operator** allows IF/ELSE logic in a single line. Write a Ternary 
 
 ```javascript
 let isWeekend = false;
-let schedule = isWeekend ? "Day Off" : "Work Day";
-
-console.log(schedule);
+let schedule;
+// Write Ternary Operator
 ```
 
 #### Exercise 6: If/Else Structure (Coding)
@@ -81,12 +64,7 @@ Write an `if/else` statement that checks the variable `userAge`. If `userAge` is
 
 ```javascript
 let userAge = 16;
-
-if (userAge >= 18) {
-  console.log("Access Granted");
-} else {
-  console.log("Access Denied");
-}
+// Write if/else statement
 ```
 
 #### Exercise 7: Logical AND Operator (Coding)
@@ -96,30 +74,16 @@ Write an `if` statement using the **AND operator (`&&`)**. The code block should
 ```javascript
 let hasPermission = true;
 let itemCount = 3;
-
-if (hasPermission && itemCount < 5) {
-  console.log("Ready to process");
-}
+// Write if statement using AND operator:
 ```
 
 #### Exercise 8: For Loop (Coding)
 
 Write a standard **`for` loop** that runs exactly 5 times. Inside the loop, log the current iteration number (starting from 1).
 
-for (let i = 1; i <= 5; i++) {
-  console.log("Iteration number: " + i);
-}
-
 #### Exercise 9: Loop Control (Coding)
 
 Write a `for` loop that iterates from 0 to 9. Use the **`break`** keyword to terminate the loop early if the iteration number reaches 7.
-
-for (let i = 0; i < 10; i++) {
-  if (i === 7) {
-    break;
-  }
-  console.log("Iteration number: " + i);
-}
 
 #### Exercise 10: Ensuring Execution (Coding)
 
@@ -127,10 +91,7 @@ The **`do while` loop** ensures the core block runs at least once. Write a `do w
 
 ```javascript
 let counter = 10;
-
-do {
-  console.log("Running once");
-} while (counter < 0);
+// Write do while loop:
 ```
 
 ---
@@ -140,13 +101,6 @@ do {
 #### Exercise 11: Function Definition (Coding)
 
 Define a function named `calculateArea`. This function must accept two **parameters** (`width` and `height`), multiply them, and use a **return value** to send the result back to the caller. Then, call the function with the **arguments** 5 and 10, and store the result in a variable named `resultArea`.
-
-function calculateArea(width, height) {
-  return width * height;
-}
-
-let resultArea = calculateArea(5, 10);
-console.log(resultArea);
 
 #### Exercise 12: Array Manipulation (Coding)
 
