@@ -114,13 +114,23 @@ for (let i = 1; i <= 5; i++) {
 
 Write a `for` loop that iterates from 0 to 9. Use the **`break`** keyword to terminate the loop early if the iteration number reaches 7.
 
+for (let i = 0; i < 10; i++) {
+  if (i === 7) {
+    break;
+  }
+  console.log("Iteration number: " + i);
+}
+
 #### Exercise 10: Ensuring Execution (Coding)
 
 The **`do while` loop** ensures the core block runs at least once. Write a `do while` loop using the variable `counter` that logs `"Running once"` inside the `do` block. Set the `while` condition such that the loop never repeats.
 
 ```javascript
 let counter = 10;
-// Write do while loop:
+
+do {
+  console.log("Running once");
+} while (counter < 0);
 ```
 
 ---
@@ -130,6 +140,13 @@ let counter = 10;
 #### Exercise 11: Function Definition (Coding)
 
 Define a function named `calculateArea`. This function must accept two **parameters** (`width` and `height`), multiply them, and use a **return value** to send the result back to the caller. Then, call the function with the **arguments** 5 and 10, and store the result in a variable named `resultArea`.
+
+function calculateArea(width, height) {
+  return width * height;
+}
+
+let resultArea = calculateArea(5, 10);
+console.log(resultArea);
 
 #### Exercise 12: Array Manipulation (Coding)
 
