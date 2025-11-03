@@ -46,6 +46,8 @@ Add a single-line comment to the following variable assignment that explains to 
 ```javascript
 // stores the currect score number
 let currentScore = 95;
+
+console.log(currentScore);
 ```
 
 #### Exercise 4: Equality Comparison (Coding)
@@ -69,6 +71,8 @@ The **Ternary Operator** allows IF/ELSE logic in a single line. Write a Ternary 
 ```javascript
 let isWeekend = false;
 let schedule = isWeekend ? "Day Off" : "Work Day";
+
+console.log(schedule);
 ```
 
 #### Exercise 6: If/Else Structure (Coding)
@@ -92,12 +96,19 @@ Write an `if` statement using the **AND operator (`&&`)**. The code block should
 ```javascript
 let hasPermission = true;
 let itemCount = 3;
-// Write if statement using AND operator:
+
+if (hasPermission && itemCount < 5) {
+  console.log("Ready to process");
+}
 ```
 
 #### Exercise 8: For Loop (Coding)
 
 Write a standard **`for` loop** that runs exactly 5 times. Inside the loop, log the current iteration number (starting from 1).
+
+for (let i = 1; i <= 5; i++) {
+  console.log("Iteration number: " + i);
+}
 
 #### Exercise 9: Loop Control (Coding)
 
